@@ -1,0 +1,34 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Apple Series 8",
+			"image": "/Series8-black.jpg",
+			"price": 110
+		},
+		{
+			"id": 2,
+			"name": "Apple Ultra",
+			"image": "/Series8-black.jpg",
+			"price": 110
+		},
+		{
+			"id": 3,
+			"name": "Apple SE",
+			"image": "/Series8-black.jpg",
+			"price": 110
+		},
+		{
+			"id": 4,
+			"name": "Apple NEW",
+			"image": "/Series8-black.jpg",
+			"price": 110
+		},
+		{
+			"id": 5,
+			"name": "Apple NEW 2",
+			"image": "/Series8-black.jpg",
+			"price": 110
+		}
+	]
+}
