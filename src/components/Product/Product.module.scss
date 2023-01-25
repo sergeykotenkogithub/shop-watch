@@ -1,0 +1,10 @@
+.product {
+	@apply flex w-2/5 justify-between;
+	button {
+		@apply ml-3;
+	}
+}
+
+.name {
+	@apply w-56;
+}

@@ -1,0 +1,33 @@
+.header {
+	@apply flex items-center justify-between;
+	height: 52px;
+}
+
+.menu {
+	@apply flex items-center;
+}
+
+.title {
+	@apply text-2xl font-extrabold;
+}
+
+.list {
+	@apply flex;
+	li {
+		@apply p-3 text-xl;
+	}
+}
+
+.cart {
+	@apply flex items-center h-2 w-10;
+}
+
+.icon {
+	@apply mr-3;
+	flex-shrink: 0;
+	flex-grow: 0;
+}
+
+.indent {
+	@apply pt-12;
+}
