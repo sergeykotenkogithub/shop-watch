@@ -5,8 +5,10 @@ interface ICartSlice {
 	cartProducts: IProduct[]
 }
 
+const cartLocalStorage = localStorage.getItem('cart')
+
 const initialState: ICartSlice = {
-	cartProducts: [],
+	cartProducts: cartLocalStorage ? JSON.parse(cartLocalStorage) : [],
 }
 
 export const cartSlice = createSlice({
@@ -15,13 +17,14 @@ export const cartSlice = createSlice({
 	reducers: {
 		productAdd: (state, action: PayloadAction<IProduct>) => {
 			state.cartProducts.push(action.payload)
+			localStorage.setItem('cart', JSON.stringify(state.cartProducts))
 		},
 		productRemove: (state, action: PayloadAction<number>) => {
 			console.log(action.payload)
 			state.cartProducts = state.cartProducts.filter(
 				(product) => product.id !== action.payload
 			)
-			console.log(state.cartProducts)
+			localStorage.setItem('cart', JSON.stringify(state.cartProducts))
 		},
 	},
 })

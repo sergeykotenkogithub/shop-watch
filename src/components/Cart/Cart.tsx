@@ -32,6 +32,7 @@ const Cart: FC<ICart> = ({ openCart, setOpenCart }) => {
 		>
 			<div className={styles.blur} />
 			<div className={styles.content} onClick={stopEvent}>
+				<div>Timeshop</div>
 				<div>CAAARTTT</div>
 				{cartProducts?.length ? (
 					cartProducts.map((product) => (

@@ -26,13 +26,9 @@ const Header: FC = () => {
 							<li>Contact</li>
 						</ul>
 					</nav>
-					<Button>
+					<Button onClick={() => handleOpenCart()}>
 						<div className={styles.cart}>
-							<RiShoppingCartLine
-								className={styles.icon}
-								size={22}
-								onClick={handleOpenCart}
-							/>
+							<RiShoppingCartLine className={styles.icon} size={22} />
 							<div>{cartProducts.length}</div>
 						</div>
 					</Button>

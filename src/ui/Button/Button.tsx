@@ -2,9 +2,9 @@ import { Children, FC, PropsWithChildren, ReactNode } from 'react'
 import styles from './Button.module.scss'
 import { RiShoppingCartLine } from 'react-icons/ri'
 
-const Button: FC<PropsWithChildren> = ({ children }) => {
+const Button: FC<PropsWithChildren<any>> = ({ children, ...rest }) => {
 	return (
-		<div className={styles.button}>
+		<div className={styles.button} {...rest}>
 			{children}
 			{/* <div>
 				<RiShoppingCartLine size={22} />

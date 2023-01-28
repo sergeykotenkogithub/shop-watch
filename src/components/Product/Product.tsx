@@ -15,8 +15,12 @@ const Product: FC<{ product: IProduct }> = ({ product }) => {
 
 	return (
 		<div className={styles.product}>
+			<div>
+				<img src={require(`../../images/watch${product.image}`)} alt="" />
+			</div>
 			<div className={styles.name}>{product.name}</div>
 			<div>{product.price}</div>
+
 			<button onClick={() => handleAdd(product)}>Add Product</button>
 		</div>
 	)

@@ -1,5 +1,5 @@
 .cart {
-	@apply w-screen h-screen fixed left-0 top-14 -translate-x-full transition-transform;
+	@apply w-screen h-screen fixed left-0 top-14 -translate-x-full transition-transform z-10;
 	transform: translateX(-130%);
 }
 
@@ -10,10 +10,11 @@
 .blur {
 	@apply h-screen w-screen backdrop-blur-sm absolute;
 	left: 30%;
+	z-index: 2;
 }
 
 .content {
-	@apply h-full bg-slate-500;
+	@apply h-full bg-slate-500 relative -top-14;
 	width: 30%;
-	background-color: #dce0ef;
+	background-color: #e8ebef;
 }

@@ -1,0 +1,33 @@
+.info {
+	@apply pt-16 flex justify-between;
+}
+
+.title_wrapper {
+	@apply font-extrabold pb-5;
+	font-size: 70px;
+	line-height: 125%;
+}
+
+.title {
+}
+
+.title_dedicated {
+	color: #ff9805;
+}
+
+.text {
+	font-size: 24px;
+	width: 480px;
+	line-height: 140%;
+	text-align: justify;
+}
+
+.img {
+	@apply -top-16;
+	background: url('../../images/main.png');
+	width: 750px;
+	height: 750px;
+	background-size: cover;
+	background-position-x: center;
+	background-position-y: -75px;
+}

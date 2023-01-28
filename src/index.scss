@@ -13,6 +13,11 @@
 }
 
 .wrapper {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.indents {
 	@apply px-10;
 }
 

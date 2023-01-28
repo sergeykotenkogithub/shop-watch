@@ -1,0 +1,9 @@
+.title {
+	@apply text-4xl font-bold pb-4;
+}
+
+.text {
+	@apply text-lg;
+	margin: 0 auto;
+	width: 500px;
+}
