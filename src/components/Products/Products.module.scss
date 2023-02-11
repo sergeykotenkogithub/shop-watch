@@ -7,3 +7,15 @@
 	margin: 0 auto;
 	width: 500px;
 }
+
+.wrapper_text {
+	@apply text-center mb-11;
+}
+
+.wrapper_products {
+	// @apply flex flex-wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 25%);
+	justify-content: space-evenly;
+	row-gap: 50px;
+}

@@ -3,6 +3,7 @@ import { IProduct } from '../../type/product'
 import styles from './Product.module.scss'
 import { useAppDispatch, useAppSelector } from '../../hooks/redux'
 import { cartAction } from '../../store/reducers/cart.slice'
+import Button from '../../ui/Button/Button'
 
 const Product: FC<{ product: IProduct }> = ({ product }) => {
 	const display = useAppDispatch()
@@ -15,13 +16,27 @@ const Product: FC<{ product: IProduct }> = ({ product }) => {
 
 	return (
 		<div className={styles.product}>
-			<div>
-				<img src={require(`../../images/watch${product.image}`)} alt="" />
+			<div className={styles.block}>
+				<div className={styles.image_background}>
+					<img
+						className={styles.image}
+						src={require(`../../images/watch${product.image}`)}
+						alt="watch"
+					/>
+				</div>
+				<div className={styles.name}>{product.name}</div>
+				<div className={styles.price}>$ {product.price}</div>
+				<div className={styles.btn_wrapper}>
+					<Button className={styles.btn_add} onClick={() => handleAdd(product)}>
+						Add to Cart
+					</Button>
+					<Button className={styles.btn_buy}>Buy Now</Button>
+					{/* <button className={styles.btn_add} onClick={() => handleAdd(product)}>
+						Add to Cart
+					</button> */}
+					{/* <button className={styles.btn_buy}>Buy Now</button> */}
+				</div>
 			</div>
-			<div className={styles.name}>{product.name}</div>
-			<div>{product.price}</div>
-
-			<button onClick={() => handleAdd(product)}>Add Product</button>
 		</div>
 	)
 }

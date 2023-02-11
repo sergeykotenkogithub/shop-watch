@@ -1,10 +1,59 @@
 .product {
-	@apply flex w-2/5 justify-between;
-	button {
-		@apply ml-3;
-	}
+	@apply flex;
+	// display: grid;
+	// grid-template-columns: repeat(3, 350px);
+	// gap: 20px;
+
+	// width: 350px;
+	// margin: 0 20px;
 }
 
 .name {
-	@apply w-56;
+	@apply w-56 text-2xl font-bold text-center w-full pb-2;
+}
+
+.block {
+	@apply p-5;
+	width: 100%;
+	border-radius: 20px;
+	background: white;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+}
+
+.image {
+	width: 200px;
+	height: 200px;
+}
+
+.image_background {
+	@apply flex justify-center py-5;
+	background-color: #f4f7ff;
+	width: 100%;
+}
+
+.price {
+	@apply text-orange-500 text-2xl text-center pb-2;
+	// color: orange;
+}
+
+.btn_wrapper {
+	@apply flex justify-between;
+}
+
+.btn_add {
+	display: inline-flex;
+	background: #01c28c;
+	border-radius: 22px;
+	padding: 10px 35px;
+	color: white;
+}
+
+.btn_buy {
+	display: inline-flex;
+	background: #01c28c;
+	border-radius: 22px;
+	padding: 10px 35px;
+	color: white;
 }

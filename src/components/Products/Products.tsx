@@ -16,10 +16,12 @@ const Products: FC = () => {
 			<ProductsTitle />
 			{isLoading && <div>Loading....</div>}
 			{error && <div>Ошибка загрузки данных</div>}
-			{products &&
-				products.map((product) => (
-					<Product key={product.id} product={product} />
-				))}
+			<div className={styles.wrapper_products}>
+				{products &&
+					products.map((product) => (
+						<Product key={product.id} product={product} />
+					))}
+			</div>
 		</div>
 	)
 }

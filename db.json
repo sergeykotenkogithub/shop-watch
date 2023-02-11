@@ -3,38 +3,44 @@
 		{
 			"id": 1,
 			"name": "Apple Series 8",
-			"image": "/Series8-black.jpg",
-			"price": 110
+			"image": "/Series8-black.png",
+			"price": 110,
+			"count": 1
 		},
 		{
 			"id": 2,
 			"name": "Apple Ultra",
-			"image": "/Ultra-orange.jpg",
-			"price": 110
+			"image": "/Ultra-orange.png",
+			"price": 110,
+			"count": 1
 		},
 		{
 			"id": 3,
 			"name": "Apple SE",
-			"image": "/Se-white.jpg",
-			"price": 110
+			"image": "/Se-white.png",
+			"price": 110,
+			"count": 1
 		},
 		{
 			"id": 4,
 			"name": "Apple Series 7",
-			"image": "/Series7.jpg",
-			"price": 110
+			"image": "/S7.png",
+			"price": 110,
+			"count": 1
 		},
 		{
 			"id": 5,
-			"name": "Apple Series 6",
-			"image": "/Series6.jpg",
-			"price": 110
+			"name": "Apple Watch Studio",
+			"image": "/WatchStudio.png",
+			"price": 110,
+			"count": 1
 		},
 		{
 			"id": 6,
-			"name": "Apple Series 5",
-			"image": "/Series5.jpg",
-			"price": 110
+			"name": "Apple Watch Hermes",
+			"image": "/Hermes.png",
+			"price": 110,
+			"count": 1
 		}
 	]
 }
