@@ -1,0 +1,47 @@
+.smallTitle {
+	color: #dfae87;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 21px;
+	padding-bottom: 15px;
+}
+
+.info {
+	width: 50%;
+}
+
+.img {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+	width: 50%;
+}
+
+.list {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	position: relative;
+	left: -10px;
+
+	svg {
+		fill: #dfae87;
+	}
+}
+
+.listItem {
+	display: flex;
+	align-items: center;
+}
+
+.wrapperInfo {
+	display: flex;
+	margin-top: 50px;
+}
+
+.text p {
+	padding-bottom: 10px;
+}

@@ -1,9 +1,11 @@
-import { FC, useState } from 'react'
-import styles from './Home.module.scss'
-import Header from './Header/Header'
-import Products from './Products/Products'
-import InfoWatch from './InfoWatch/InfoWatch'
+import { FC } from 'react'
+import AboutOurWatch from './AboutOurWatch/AboutOurWatch'
 import Benefits from './Benefits/Benefits'
+import Header from './Header/Header'
+import styles from './Home.module.scss'
+import InfoWatch from './InfoWatch/InfoWatch'
+import Products from './Products/Products'
+import WhyChoseUp from './WhyChoseUp/WhyChoseUp'
 
 const Home: FC = () => {
 	return (
@@ -19,6 +21,8 @@ const Home: FC = () => {
 			<div className="wrapper">
 				<Benefits />
 				<Products />
+				<AboutOurWatch />
+				<WhyChoseUp />
 			</div>
 		</div>
 	)

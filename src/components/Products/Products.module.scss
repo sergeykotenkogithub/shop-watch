@@ -16,6 +16,6 @@
 	// @apply flex flex-wrap;
 	display: grid;
 	grid-template-columns: repeat(3, 25%);
-	justify-content: space-evenly;
+	justify-content: space-between;
 	row-gap: 50px;
 }
