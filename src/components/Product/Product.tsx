@@ -1,9 +1,9 @@
 import { FC } from 'react'
-import { IProduct } from '../../type/product'
-import styles from './Product.module.scss'
-import { useAppDispatch, useAppSelector } from '../../hooks/redux'
+import { useAppDispatch } from '../../hooks/redux'
 import { cartAction } from '../../store/reducers/cart.slice'
+import { IProduct } from '../../type/product'
 import Button from '../../ui/Button/Button'
+import styles from './Product.module.scss'
 
 const Product: FC<{ product: IProduct }> = ({ product }) => {
 	const display = useAppDispatch()

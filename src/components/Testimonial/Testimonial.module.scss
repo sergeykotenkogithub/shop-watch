@@ -1,0 +1,48 @@
+.testimonial {
+	@apply p-6;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+}
+
+.testimonialWrapper {
+	@apply pb-12;
+}
+
+.img {
+	> img {
+		@apply object-cover  w-16 h-16 mr-5;
+		border-radius: 50%;
+	}
+}
+
+.man {
+	@apply flex items-center;
+}
+
+.name {
+	@apply text-xl font-bold;
+	color: #33a989;
+}
+
+.specialty {
+	@apply text-sm;
+}
+
+.testimonialPeople {
+	@apply flex;
+	gap: 60px;
+}
+
+.text {
+	@apply pb-4;
+}
+
+.title {
+	@apply text-center py-12 flex justify-center flex-col items-center;
+}
+
+.info {
+	@apply text-lg;
+	width: 40%;
+}

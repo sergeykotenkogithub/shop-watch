@@ -1,0 +1,25 @@
+.textBackground {
+	background: #18ad7f;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+
+.videoComponentWrapper {
+	@apply mt-12;
+	color: #f5ffff;
+}
+
+.textWrapper {
+	@apply text-center;
+	width: 55%;
+}
+
+.videoWrapper {
+	@apply flex justify-center relative -top-32;
+}
+
+.title {
+	text-align: center;
+}

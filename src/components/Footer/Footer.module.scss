@@ -1,0 +1,9 @@
+.footer {
+	@apply py-6;
+	background: #060931;
+	color: #d0d2e8;
+}
+
+.information {
+	@apply flex flex-col text-xl;
+}

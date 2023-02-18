@@ -1,9 +1,8 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
+import { Provider } from 'react-redux'
+import Home from './components/Home'
 import './index.scss'
 import reportWebVitals from './reportWebVitals'
-import Home from './components/Home'
-import { Provider } from 'react-redux'
 import { setupStore } from './store/store'
 
 const store = setupStore()
