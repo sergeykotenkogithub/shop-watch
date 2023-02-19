@@ -1,5 +1,5 @@
 .cart {
-	@apply w-screen h-screen fixed left-0 top-14 -translate-x-full transition-transform z-10;
+	@apply w-screen h-screen fixed left-0 top-12 -translate-x-full transition-transform z-10 pt-2;
 	transform: translateX(-130%);
 }
 
@@ -17,4 +17,72 @@
 	@apply h-full bg-slate-500 relative -top-14;
 	width: 30%;
 	background-color: #e8ebef;
+}
+
+.productWrapper {
+	@apply flex my-6 px-4;
+}
+
+.name {
+	@apply text-center text-2xl font-bold;
+}
+
+.product {
+	@apply relative -left-8 flex items-center shrink-0;
+	z-index: 1;
+	width: calc(100% - 88px);
+	border-radius: 20px;
+	padding: 20px;
+	-webkit-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	-moz-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
+	background: #f1f1f1;
+
+	left: -38px;
+}
+
+.btn {
+	@apply w-20 flex items-center cursor-pointer shrink-0;
+	background: black;
+	border-radius: 20px;
+	padding-left: 17px;
+}
+
+.title {
+	@apply text-2xl font-extrabold pl-5 pt-2;
+}
+
+.img {
+	@apply w-12 h-12 mr-4;
+}
+
+.quantity {
+	@apply w-20 flex items-center flex-col justify-center relative right-8 shrink-0;
+	background: black;
+	color: white;
+	border-radius: 20px;
+	right: 74px;
+	div {
+		@apply w-full flex justify-center pr-12 relative;
+		right: -38px;
+	}
+}
+
+.btnAddRemove {
+	@apply cursor-pointer;
+}
+
+.noGoods {
+	@apply py-5 text-xl pl-5;
+}
+
+.total {
+	@apply flex pl-5 text-2xl;
+	> div {
+		@apply pr-2;
+	}
+}
+
+.productName {
+	@apply font-bold text-xl;
 }

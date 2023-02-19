@@ -4,42 +4,42 @@
 			"id": 1,
 			"name": "Apple Series 8",
 			"image": "/Series8-black.png",
-			"price": 110,
+			"price": 260,
 			"count": 1
 		},
 		{
 			"id": 2,
 			"name": "Apple Ultra",
 			"image": "/Ultra-orange.png",
-			"price": 110,
+			"price": 350,
 			"count": 1
 		},
 		{
 			"id": 3,
 			"name": "Apple SE",
 			"image": "/Se-white.png",
-			"price": 110,
+			"price": 248,
 			"count": 1
 		},
 		{
 			"id": 4,
 			"name": "Apple Series 7",
 			"image": "/S7.png",
-			"price": 110,
+			"price": 195,
 			"count": 1
 		},
 		{
 			"id": 5,
 			"name": "Apple Watch Studio",
 			"image": "/WatchStudio.png",
-			"price": 110,
+			"price": 215,
 			"count": 1
 		},
 		{
 			"id": 6,
 			"name": "Apple Watch Hermes",
 			"image": "/Hermes.png",
-			"price": 110,
+			"price": 170,
 			"count": 1
 		}
 	]

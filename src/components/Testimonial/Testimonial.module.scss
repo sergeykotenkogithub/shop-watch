@@ -1,12 +1,12 @@
+.testimonialWrapper {
+	@apply pb-28;
+}
+
 .testimonial {
 	@apply p-6;
 	-webkit-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
 	-moz-box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
 	box-shadow: 0px 0px 18px 0px rgba(34, 60, 80, 0.24);
-}
-
-.testimonialWrapper {
-	@apply pb-12;
 }
 
 .img {
@@ -39,7 +39,7 @@
 }
 
 .title {
-	@apply text-center py-12 flex justify-center flex-col items-center;
+	@apply text-center pb-12 flex justify-center flex-col items-center;
 }
 
 .info {

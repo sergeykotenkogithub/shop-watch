@@ -16,7 +16,20 @@ export const cartSlice = createSlice({
 	initialState,
 	reducers: {
 		productAdd: (state, action: PayloadAction<IProduct>) => {
-			state.cartProducts.push(action.payload)
+			const checkProduct = state.cartProducts.some(
+				(product) => product.id === action.payload.id
+			)
+
+			if (!checkProduct) {
+				state.cartProducts.push(action.payload)
+			} else {
+				state.cartProducts = state.cartProducts.map((product) =>
+					product.id === action.payload.id
+						? { ...product, count: product.count + 1 }
+						: product
+				)
+			}
+
 			localStorage.setItem('cart', JSON.stringify(state.cartProducts))
 		},
 		productRemove: (state, action: PayloadAction<number>) => {
@@ -24,6 +37,29 @@ export const cartSlice = createSlice({
 			state.cartProducts = state.cartProducts.filter(
 				(product) => product.id !== action.payload
 			)
+			localStorage.setItem('cart', JSON.stringify(state.cartProducts))
+		},
+		productAddQuantity: (state, action: PayloadAction<number>) => {
+			state.cartProducts = state.cartProducts.map((product) =>
+				product.id === action.payload
+					? { ...product, count: (product?.count as number) + 1 }
+					: product
+			)
+			localStorage.setItem('cart', JSON.stringify(state.cartProducts))
+		},
+		productRemoveQuantity: (state, action: PayloadAction<IProduct>) => {
+			if (action.payload.count === 1) {
+				state.cartProducts = state.cartProducts.filter(
+					(product) => product.id !== action.payload.id
+				)
+			} else {
+				state.cartProducts = state.cartProducts.map((product) =>
+					product.id === action.payload.id
+						? { ...product, count: (product?.count as number) - 1 }
+						: product
+				)
+			}
+
 			localStorage.setItem('cart', JSON.stringify(state.cartProducts))
 		},
 	},
